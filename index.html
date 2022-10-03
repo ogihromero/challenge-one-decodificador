@@ -6,6 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Challenge ONE - Decodificador</title>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
@@ -14,28 +16,39 @@
     <body>
         <header>
             <img src="./img/logo-alura.svg" alt="Logo da alura" class="header__img">
-            <h1>Decodificador</h1>
+            <h1>Decodificador Challenge ONE - Alura+Oracle</h1>
         </header>
         <main>
             <section class="box-criptografia">
                 <textarea name="box-criptografia__texto-alvo" id="box-criptografia__texto-alvo" cols="30" rows="10"
-                    placeholder="Digite seu texto"></textarea>
-                <di><h6 class="aviso"> Apenas letras minúsculas e sem </h6></div>
-                <div class="box-criptografia__botao">
-                    <button class="criptografar" onclick="btnEncriptar()">Criptografar</button>
-                    <button class="descriptografar" onclick="btnDesencritpar()">Descriptografar</button>
-                </div>
+                    placeholder="Digite seu texto aqui"></textarea>
+                <div>
+                    <h6 class="aviso"> <i class="fa fa-exclamation-circle"></i>Apenas letras minúsculas e sem acento
+                    </h6>
+                    </div>
+                    <div class="box-criptografia__botao">
+                        <button class="criptografar" onclick="btnEncriptar()">Criptografar</button>
+                        <button class="descriptografar" onclick="btnDesencritpar()">Descriptografar</button>
+                    </div>
             </section>
 
             <section class="box-resultado">
                 <textarea name="box-resultado__texto" class="box-resultado__texto" cols="18" rows="10"
-                placeholder="Resultado"></textarea>
+                    placeholder="Resultado"></textarea>
             </section>
 
 
 
         </main>
-        <footer>Desenvolvidor por Adriano Romero</footer>
+        <footer>
+            <div class="footer">
+                <p>&copy; Desenvolvido por Adriano Romero</p>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/adriano-romero/"><i class="fa fa-linkedin" aria-hidden="true"></i>></a>
+                    <a href="https://github.com/ogihromero?tab=repositories"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </footer>
 
         <script src="js/script.js"></script>
     </body>
